@@ -1,0 +1,8 @@
+**/*.gba
+**/*.sym
+**/*.sav
+**/AssembleLynEvent.bat
+**/Assemble ARM.bat
+**/AssembleARM.bat
+Event Assembler
+Workplace
