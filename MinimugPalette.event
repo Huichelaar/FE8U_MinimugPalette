@@ -13,7 +13,7 @@
 	#define FreeSpace 0x1000000
 	ORG FreeSpace
 #endif
-
+{
 // Definitions & variables
 #define MMP_Buffer 0x202B4AC    // Set this to some free ram space, size 0x200 bytes.
                                 // I'm using the last 0x200 bytes of the textstring buffer.
@@ -28,3 +28,4 @@ POP
 ALIGN 4
 MMPFix:
 #include "asm/MMPFix.lyn.event"
+}
