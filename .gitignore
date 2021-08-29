@@ -1,8 +1,8 @@
+# Files
 **/*.gba
 **/*.sym
 **/*.sav
-**/AssembleLynEvent.bat
-**/Assemble ARM.bat
-**/AssembleARM.bat
+
+# Directories
 Event Assembler
 Workplace
