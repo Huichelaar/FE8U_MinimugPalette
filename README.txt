@@ -12,8 +12,6 @@ WHATITDO?
   When switching from one minimug to another, the new palette is buffered, but the new tiles are immediately flushed 
   to VRAM. This patch instead buffers the tiles, preventing that one frame where a minimug is using the wrong palette.
   
-  Mind you, the patch uses 0x200 bytes of RAMspace as a buffer. By default it'll use 0x202B4AC, which is the last 
-  0x200 bytes of the textstring buffer. This should be unoccupied when this patch runs, but you can change the 
-  address by changing the MMP_Buffer definition in "MinimugPalette.event"
+  Mind you, the patch uses 0x200 bytes of RAMspace as a buffer. By default it'll use 0x201F148, which is used by the Sound Room, Random mode song id and related things. This should be unoccupied when this patch runs, but you can change the address by changing the MMP_Buffer definition in "MinimugPalette.event".
   
-29/8/2021. ~Huichelaar
+9/2/2023. ~Huichelaar
